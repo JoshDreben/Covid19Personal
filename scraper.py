@@ -61,11 +61,11 @@ class scraper:
             self.update_data(wdh, wsh, sm)
         diff = self.get_difference(wdh, wsh, sm)
         print('--------------------------')
-        print('|', 'Cases', list(ts)[0].strip())
+        print('| Cases ' + str(list(ts)[0].strip()))
         print('|                         ')
-        print('| Woodland Hills: ', wdh.td.get_text(), diff[0])
-        print('| West Hills: ', wsh.td.get_text(), diff[1])
-        print('| Santa Monica: ', sm.td.get_text(), diff[2])
+        print('| Woodland Hills: ' + wdh.td.get_text() + ' ' + str(diff[0]))
+        print('| West Hills: ' + wsh.td.get_text() + ' ' + str(diff[1]))
+        print('| Santa Monica: ' + sm.td.get_text() + ' ' + str(diff[2]))
         print('--------------------------')
 
     def get_locations(self, rows):
